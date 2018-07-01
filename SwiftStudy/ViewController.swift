@@ -4,9 +4,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
-    @IBOutlet weak var helloLabel: UILabel!
-    @IBOutlet weak var textField: UITextField!
+    // 7월2일 복습하기
     
     
     override func viewDidLoad() {
@@ -19,12 +17,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
-    @IBAction func btnSend(_ sender: UIButton) {
-        helloLabel.text = "Hello," + textField.text!
-        
-    }
     
+
     
 }
 
