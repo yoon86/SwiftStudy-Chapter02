@@ -5,8 +5,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
     var currentImageIndex = 0
-    
-    // var imageNameArray = ["01","02","03","04","05","06"]
     var imageNameArray = [String]()
     
     override func viewDidLoad() {
@@ -15,6 +13,7 @@ class ViewController: UIViewController {
             imageNameArray.append(String(format: "%02d", i))
         }
         print(imageNameArray)
+        
     }
     
     @IBAction func prevBtn(_ sender: UIButton) {
@@ -25,6 +24,7 @@ class ViewController: UIViewController {
         imageView.image = UIImage(named: imageNameArray[currentImageIndex])
     }
     
+    
     @IBAction func nextBtn(_ sender: UIButton) {
         currentImageIndex += 1
         if imageNameArray.count <= currentImageIndex {
@@ -32,6 +32,7 @@ class ViewController: UIViewController {
         }
         imageView.image = UIImage(named: imageNameArray[currentImageIndex])
     }
+    
     
 }
 
